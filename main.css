@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    background-image: url(assets/hero.png);
+    background-position: center;
+    height: 600px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-bottom-left-radius: 100% 15%;
+    border-bottom-right-radius: 100% 15%;
+   
+}
