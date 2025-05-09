@@ -4,7 +4,7 @@
 
 @layer utilities{
     .card{
-        @apply bg-[#2D3142] p-[30px] w-full rounded-md  min-h-[300px] transition-all ease-out hover:bg-black hover:text-white cursor-pointer hover:translate-y-[-10px];
+        @apply bg-[#2D3142] p-[15px]  rounded-md  min-h-[350px] transition-all ease-out hover:bg-black hover:text-white cursor-pointer hover:translate-y-[-10px]  shadow-md;
     }
 } 
 .hero{
