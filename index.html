@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Document</title>
 </head>
-<body>
+<body class="section opacity-0 translate-y-4 transition-all duration-700 scroll-smooth">
     <!--navabr ssection satat-->
     <header class="max-w-full flex justify-between p-3 items-center">
         <img src="assets/logo.png" alt="logo" class="w-[138px] h-[48px] ">
@@ -257,6 +257,23 @@
   menuBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
   });
+</script>
+
+<div class="section opacity-0 translate-y-4 transition-all duration-700">
+  Content goes here
+</div>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-4');
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+      }
+    });
+  });
+
+  document.querySelectorAll('.section').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>
